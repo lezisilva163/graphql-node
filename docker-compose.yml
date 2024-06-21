@@ -1,0 +1,9 @@
+services:
+  decision:
+    image: bitnami/postgresql
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=graphql
+    ports:
+      - 5432:5432
